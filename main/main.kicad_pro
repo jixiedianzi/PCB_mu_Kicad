@@ -38,8 +38,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.3,
-          "height": 0.6,
-          "width": 0.6
+          "height": 1.2,
+          "width": 1.2
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -56,6 +56,11 @@
           "gap": 0.0,
           "via_gap": 0.0,
           "width": 0.0
+        },
+        {
+          "gap": 0.3,
+          "via_gap": 0.3,
+          "width": 0.3
         }
       ],
       "drc_exclusions": [],
@@ -469,6 +474,7 @@
       "single_global_label": "ignore",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
+      "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
