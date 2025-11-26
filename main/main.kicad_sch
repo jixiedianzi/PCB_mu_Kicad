@@ -3819,12 +3819,6 @@
 		(uuid "ec15063d-a643-41bc-abf4-09ae5248e962")
 	)
 	(junction
-		(at 113.03 90.17)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f35b0530-7ce0-4c78-b3b8-498328da9691")
-	)
-	(junction
 		(at 133.35 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3857,16 +3851,6 @@
 			(type default)
 		)
 		(uuid "01ad0ff6-0213-49e5-95d7-41a052912373")
-	)
-	(wire
-		(pts
-			(xy 120.65 96.52) (xy 128.27 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "01e6fff8-848f-4487-bf75-07b0072af430")
 	)
 	(wire
 		(pts
@@ -4267,16 +4251,6 @@
 			(type default)
 		)
 		(uuid "42cacf85-c8d1-4323-8754-8687aa5e8c10")
-	)
-	(wire
-		(pts
-			(xy 128.27 90.17) (xy 128.27 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "45ed2cff-88af-453b-8a6a-c7d0c55ca97f")
 	)
 	(wire
 		(pts
@@ -4940,16 +4914,6 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 90.17) (xy 113.03 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b80f1e5d-ebf8-4df8-9269-4f8f309ae571")
-	)
-	(wire
-		(pts
 			(xy 242.57 144.78) (xy 242.57 146.05)
 		)
 		(stroke
@@ -5527,16 +5491,6 @@
 			(justify right bottom)
 		)
 		(uuid "5ec274f7-518a-402f-b797-49422f74db04")
-	)
-	(label "Boot"
-		(at 128.27 91.44 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "616ddcd5-74e8-4d3e-a228-1023162d189b")
 	)
 	(label "+5V_Source"
 		(at 260.35 132.08 0)
@@ -7790,6 +7744,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Value" "12pF"
@@ -8751,73 +8706,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 113.03 90.17 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6d49818c-1607-4c57-9ff9-71053fb2a633")
-		(property "Reference" "#PWR09"
-			(at 106.68 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 109.22 90.1699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 113.03 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 113.03 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 113.03 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fe98d5e9-100a-44c7-aa14-92819267ac05")
-		)
-		(instances
-			(project "main"
-				(path "/78eeff3e-e2c1-4cc8-997a-22299bf00b85"
-					(reference "#PWR09")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Polarized")
 		(at 87.63 97.79 0)
 		(unit 1)
@@ -9317,75 +9205,6 @@
 			(project "main"
 				(path "/78eeff3e-e2c1-4cc8-997a-22299bf00b85"
 					(reference "#PWR036")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 116.84 96.52 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7833de30-c466-46eb-95e1-e9ad0499f637")
-		(property "Reference" "C6"
-			(at 120.396 93.98 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1uF"
-			(at 120.396 95.504 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 113.03 97.4852 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 116.84 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 116.84 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "13b93231-f0e9-4c42-82d0-09deb95422b1")
-		)
-		(pin "2"
-			(uuid "205e60e8-4660-45c9-a3c2-d335d1440ff9")
-		)
-		(instances
-			(project "main"
-				(path "/78eeff3e-e2c1-4cc8-997a-22299bf00b85"
-					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -10221,74 +10040,6 @@
 			(project "main"
 				(path "/78eeff3e-e2c1-4cc8-997a-22299bf00b85"
 					(reference "F4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_DIP_x01")
-		(at 120.65 90.17 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "983e323d-f9d5-45fd-8620-a66f3f58b4a3")
-		(property "Reference" "SW2"
-			(at 120.904 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_DIP_x01"
-			(at 120.65 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Button_Switch_SMD:SW_SPST_EVQPE1"
-			(at 120.65 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 120.65 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 120.65 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "d2f227fa-1caf-440c-99b0-4f59614837ee")
-		)
-		(pin "1"
-			(uuid "2dc387ee-be26-4e5f-a803-51fdb0a425c0")
-		)
-		(instances
-			(project "main"
-				(path "/78eeff3e-e2c1-4cc8-997a-22299bf00b85"
-					(reference "SW2")
 					(unit 1)
 				)
 			)
